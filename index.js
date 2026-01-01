@@ -199,22 +199,35 @@ console.log(theList);*/}
 // Logic Statements
 // 🎯 Goal: Understanding logic statements
 
-let age = parseInt(prompt("Please enter your age: "));
-let cost = 0;
-let message = "";
-if (age < 3) {
-    cost = 0;
-    message = "Access is free!";
-} else if (age >= 3 && age < 12) {
-    cost = 5;
-    message = `Access is ${cost} dollars!`;
-} else if (age >= 12 && age < 65) {
-    cost = 10;
-    message = `Access is ${cost} dollars!`;
-} else if (age >= 65) {
-    cost = 7;
-    message = `Access is ${cost} dollars!`;
-};
+// let age = parseInt(prompt("Please enter your age: "));
+// let cost = 0;
+// let message = "";
+// if (age < 3) {
+//     cost = 0;
+//     message = "Access is free!";
+// } else if (age >= 3 && age < 12) {
+//     cost = 5;
+//     message = `Access is ${cost} dollars!`;
+// } else if (age >= 12 && age < 65) {
+//     cost = 10;
+//     message = `Access is ${cost} dollars!`;
+// } else if (age >= 65) {
+//     cost = 7;
+//     message = `Access is ${cost} dollars!`;
+// };
+
+// console.log(message);
+// console.log(`The cost for your age ${age} is ${cost} dollars.`);
+
+
+
+
+
+
+
+// Conditional ternary operators
+let ID = 123;
+
+let message = ID === 123 ? "Welcome, User 123!" : "Access Denied.";
 
 console.log(message);
-console.log(`The cost for your age ${age} is ${cost} dollars.`);
