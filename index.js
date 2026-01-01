@@ -226,8 +226,56 @@ console.log(theList);*/}
 
 
 // Conditional ternary operators
-let ID = 123;
+// let ID = 123;
 
-let message = ID === 123 ? "Welcome, User 123!" : "Access Denied.";
+// let message = ID === 123 ? "Welcome, User 123!" : "Access Denied.";
 
-console.log(message);
+// console.log(message);
+
+
+
+
+
+
+// Switch statements
+// 1. Start by setting a variable that gets a random value assigned to it. The value
+// is assigned by generating a random number 0-5, for 6 possible results. You
+// can increase this number as you add more results.
+// 2. Create a prompt that can get a string value input from a user that you can
+// repeat back in the final output.
+// 3. Create 6 responses using the switch statement, each assigned to a different
+// value from the random number generator.
+// 4. Create a variable to hold the end response, which should be a sentence
+// printed for the user. You can assign different string values for each case,
+// assigning new values depending on the results from the random value.
+// 5. Output the user's original question, plus the randomly selected case
+// response, to the console after the user enters their question.
+
+
+let randomNum = Math.floor(Math.random() * 6);
+let userQuestion = prompt("Ask me anything: ");
+let response = "";
+
+switch((randomNum)) {
+    case 0:
+        response = "Hello there!";
+        break;
+    case 1:
+        response = "Hey there!";
+        break;
+    case 2:
+        response = "Hi there!";
+        break;
+    case 3:
+        response = "Congratulations! You guessed it right!";
+        break;
+    case 4:
+        response = "Hey! That's close.";
+        break;
+    case 5:
+        response = "Too low! Try again.";
+        break;
+    };
+
+console.log(`Your question: ${userQuestion}`);
+console.log(`Answer: ${response}`);
