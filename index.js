@@ -238,6 +238,8 @@ console.log(theList);*/}
 
 
 // Switch statements
+// Q1
+
 // 1. Start by setting a variable that gets a random value assigned to it. The value
 // is assigned by generating a random number 0-5, for 6 possible results. You
 // can increase this number as you add more results.
@@ -279,3 +281,46 @@ switch((randomNum)) {
 
 console.log(`Your question: ${userQuestion}`);
 console.log(`Answer: ${response}`);
+
+// Q2
+
+// 1. Create a variable called prize and use a prompt to ask the user to set the
+// value by selecting a number between 0 and 10
+// 2. Convert the prompt response to a number data type
+// 3. Create a variable to use for the output message containing the value "My
+// Selection: "
+// 4. Using the switch statement (and creativity), provide a response back
+// regarding a prize that is awarded depending on what number is selected
+// 5. Use the switch break to add combined results for prizes
+// 6. Output the message back to the user by concatenating your prize variable
+// strings and the output message string
+
+let prize = parseInt(prompt("Select a number from 0 - 10: "));
+
+let message = "";
+
+switch(prize) {
+    case 0:
+    case 1:
+    case 2:
+        message = "You won a Toy Car!";
+        break;
+    case 3:
+    case 4:
+    case 5:
+        message = "You won a Board Game!";
+        break;
+    case 6:
+    case 7:
+    case 8:
+        message = "You won a Bicycle!";
+        break;
+    case 9:
+    case 10:
+        message = "You won a Laptop!";
+        break;
+    default:
+        message = "Invalid selection. Please choose a number between 0 and 10.";
+};
+
+console.log("My Selection: ", message);
