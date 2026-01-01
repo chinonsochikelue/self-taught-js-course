@@ -164,30 +164,57 @@ console.log(theList);*/}
 
 // Company product catalog
 
-let laptops = {
-    name: "Laptop",
-    model: "XPS 13",
-    cost: 999.99,
-    quantity: 10,
+// let laptops = {
+//     name: "Laptop",
+//     model: "XPS 13",
+//     cost: 999.99,
+//     quantity: 10,
+// };
+// let smartPhone = {
+//     name: "Smartphone",
+//     model: "Galaxy S21",
+//     cost: 799.99,
+//     quantity: 25,
+// };
+// let tablet = {
+//     name: "Tablet",
+//     model: "iPad Pro",
+//     cost: 899.99,
+//     quantity: 15,
+// };
+
+// let products = [
+// ];
+
+// products.push(laptops, smartPhone, tablet);
+
+// console.log(products);
+
+// console.log(tablet.quantity)
+
+
+
+
+
+// Logic Statements
+// 🎯 Goal: Understanding logic statements
+
+let age = parseInt(prompt("Please enter your age: "));
+let cost = 0;
+let message = "";
+if (age < 3) {
+    cost = 0;
+    message = "Access is free!";
+} else if (age >= 3 && age < 12) {
+    cost = 5;
+    message = `Access is ${cost} dollars!`;
+} else if (age >= 12 && age < 65) {
+    cost = 10;
+    message = `Access is ${cost} dollars!`;
+} else if (age >= 65) {
+    cost = 7;
+    message = `Access is ${cost} dollars!`;
 };
-let smartPhone = {
-    name: "Smartphone",
-    model: "Galaxy S21",
-    cost: 799.99,
-    quantity: 25,
-};
-let tablet = {
-    name: "Tablet",
-    model: "iPad Pro",
-    cost: 899.99,
-    quantity: 15,
-};
 
-let products = [
-];
-
-products.push(laptops, smartPhone, tablet);
-
-console.log(products);
-
-console.log(tablet.quantity)
+console.log(message);
+console.log(`The cost for your age ${age} is ${cost} dollars.`);
