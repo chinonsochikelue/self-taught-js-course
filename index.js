@@ -152,7 +152,7 @@ console.log(people);
 
 // Manipulating an array
 
-
+{/*
 const theList = ['Laurence', 'Svekis', true, 35, null, undefined,
     { test: 'one', score: 55 }, ['one', 'two']];
 theList.shift();
@@ -160,4 +160,34 @@ theList.unshift('FIRST');
 theList.splice(2, 5, 'MIDDLE', 'Hello World');
 theList.pop();
 theList.push('LAST');
-console.log(theList);
+console.log(theList);*/}
+
+// Company product catalog
+
+let laptops = {
+    name: "Laptop",
+    model: "XPS 13",
+    cost: 999.99,
+    quantity: 10,
+};
+let smartPhone = {
+    name: "Smartphone",
+    model: "Galaxy S21",
+    cost: 799.99,
+    quantity: 25,
+};
+let tablet = {
+    name: "Tablet",
+    model: "iPad Pro",
+    cost: 899.99,
+    quantity: 15,
+};
+
+let products = [
+];
+
+products.push(laptops, smartPhone, tablet);
+
+console.log(products);
+
+console.log(tablet.quantity)
