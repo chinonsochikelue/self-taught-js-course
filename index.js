@@ -120,6 +120,7 @@
 
 // Arrays & Objects (Working With Complex Data)
 // 🎯 Goal: Arrays in an object
+{/*
 let friend1 = {
     firstName: "John1",
     lastName: "Paul1",
@@ -146,4 +147,17 @@ let people = {
     ],
 };
 
-console.log(people);
+console.log(people); 
+*/}
+
+// Manipulating an array
+
+{/*
+const theList = ['Laurence', 'Svekis', true, 35, null, undefined,
+    { test: 'one', score: 55 }, ['one', 'two']];
+theList.shift();
+theList.unshift('FIRST');
+theList.splice(2, 5, 'MIDDLE', 'Hello World');
+theList.pop();
+theList.push('LAST');
+console.log(theList);*/}
