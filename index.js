@@ -430,26 +430,50 @@ console.log(theList);*/}
 //     }
 // } 
 
+
+
+
+
+
+
+
 // fibonacci sequence
 
-let nr1 = 0;
-let nr2 = 1;
-let temp;
+// let nr1 = 0;
+// let nr2 = 1;
+// let temp;
 
-let fibonacciArrays = [];
+// let fibonacciArrays = [];
 
-while (fibonacciArrays.length < 25) {
-    // push all number 1 incremented number to the fibonacciArrays
-    fibonacciArrays.push(nr1);
+// while (fibonacciArrays.length < 25) {
+//     // push all number 1 incremented number to the fibonacciArrays
+//     fibonacciArrays.push(nr1);
 
-    // loop through while adding 0 + 1
-    temp = nr1 + nr2;
+//     // loop through while adding 0 + 1
+//     temp = nr1 + nr2;
 
-    // number is now number 2
-    nr1 = nr2;
+//     // number is now number 2
+//     nr1 = nr2;
 
-    // number 2 is now the temporary number, so
-    // nr2 and temp now holds the updated last numbers and automatically add the both to get nr1.
-    nr2 = temp;
-    console.log(fibonacciArrays);
-}
+//     // number 2 is now the temporary number, so
+//     // nr2 and temp now holds the updated last numbers and automatically add the both to get nr1.
+//     nr2 = temp;
+//     console.log(fibonacciArrays);
+// }
+
+
+
+
+
+// 1. Set the starting counter to 0
+// 2. Create a variable, step, to increase your counter by
+// 3. Add a do while loop, printing the counter to the console and incrementing it
+// by the step amount each loop
+// 4. Continue to loop until the counter is equal to 100 or more than 100
+
+let counter = 0;
+let step = 1;
+do {
+    console.log("This is iteration number: ", counter);
+    counter+=step;
+} while (counter <= 100);
