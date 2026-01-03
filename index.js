@@ -471,9 +471,21 @@ console.log(theList);*/}
 // by the step amount each loop
 // 4. Continue to loop until the counter is equal to 100 or more than 100
 
-let counter = 0;
-let step = 1;
-do {
-    console.log("This is iteration number: ", counter);
-    counter+=step;
-} while (counter <= 100);
+// let counter = 0;
+// let step = 1;
+// do {
+//     console.log("This is iteration number: ", counter);
+//     counter+=step;
+// } while (counter <= 100);
+
+
+let myWork = [];
+
+for (let i = 1; i <= 10; i++) {
+    let lesson = {
+        name : `Lesson ${i}`,
+        status: i % 2 === 0? true : false,
+    };
+    myWork.push(lesson);
+    console.log(myWork);
+}
