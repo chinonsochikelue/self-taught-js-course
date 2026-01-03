@@ -254,34 +254,32 @@ console.log(theList);*/}
 // response, to the console after the user enters their question.
 
 
-let randomNum = Math.floor(Math.random() * 6);
-let userQuestion = prompt("Ask me anything: ");
-let response = "";
+// let randomNum = Math.floor(Math.random() * 6);
+// let userQuestion = prompt("Ask me anything: ");
+// let response = "";
 
-switch ((randomNum)) {
-    case 0:
-        response = "Hello there!";
-        break;
-    case 1:
-        response = "Hey there!";
-        break;
-    case 2:
-        response = "Hi there!";
-        break;
-    case 3:
-        response = "Congratulations! You guessed it right!";
-        break;
-    case 4:
-        response = "Hey! That's close.";
-        break;
-    case 5:
-        response = "Too low! Try again.";
-        break;
-};
+// switch ((randomNum)) {
+//     case 0:
+//         response = "Hello there!";
+//         break;
+//     case 1:
+//         response = "Hey there!";
+//         break;
+//     case 2:
+//         response = "Hi there!";
+//         break;
+//     case 3:
+//         response = "Congratulations! You guessed it right!";
+//         break;
+//     case 4:
+//         response = "Hey! That's close.";
+//         break;
+//     case 5:
+//         response = "Too low! Try again.";
+//         break;
+// };
 
-console.log(`Your question: ${userQuestion}`);
-console.log(`Answer: ${response}`);
-
+// 2
 // Q2
 
 // 1. Create a variable called prize and use a prompt to ask the user to set the
@@ -295,35 +293,60 @@ console.log(`Answer: ${response}`);
 // 6. Output the message back to the user by concatenating your prize variable
 // strings and the output message string
 
-let prize = parseInt(prompt("Select a number from 0 - 10: "));
+// let prize = parseInt(Math.floor(prompt("Select a number from 0 - 10: ")));
+// let message = "My Selection: ";
+// switch (prize) {
+//     case 0:
+//     case 1:
+//         message = "You won a toy jet";
+//         break;
+//     case 2:
+//     case 3:
+//     case 4:
+//         message = "So close";
+//         break;
+//     case 5:
+//     case 6:
+//     case 7:
+//         message = "Congratulations, you won $50 cash prize";
+//         break;
+//     case 8:
+//     case 9:
+//     case 10:
+//         message = "Amazing"
+//         break;
+// }
 
-let message = "";
+// console.log(message)
+// let prize = parseInt(prompt("Select a number from 0 - 10: "));
 
-switch (prize) {
-    case 0:
-    case 1:
-    case 2:
-        message = "You won a Toy Car!";
-        break;
-    case 3:
-    case 4:
-    case 5:
-        message = "You won a Board Game!";
-        break;
-    case 6:
-    case 7:
-    case 8:
-        message = "You won a Bicycle!";
-        break;
-    case 9:
-    case 10:
-        message = "You won a Laptop!";
-        break;
-    default:
-        message = "Invalid selection. Please choose a number between 0 and 10.";
-};
+// let message = "";
 
-console.log("My Selection: ", message);
+// switch (prize) {
+//     case 0:
+//     case 1:
+//     case 2:
+//         message = "You won a Toy Car!";
+//         break;
+//     case 3:
+//     case 4:
+//     case 5:
+//         message = "You won a Board Game!";
+//         break;
+//     case 6:
+//     case 7:
+//     case 8:
+//         message = "You won a Bicycle!";
+//         break;
+//     case 9:
+//     case 10:
+//         message = "You won a Laptop!";
+//         break;
+//     default:
+//         message = "Invalid selection. Please choose a number between 0 and 10.";
+// };
+
+// console.log("My Selection: ", message);
 
 
 // Rock Paper Scissors game
@@ -349,29 +372,84 @@ console.log("My Selection: ", message);
 // 6. Add a new output message that shows the player selection versus the
 // computer selection and the result of the game.
 
-const choices = ["Rock", "Paper", "Scissors"];
+// const choices = ["Rock", "Paper", "Scissors"];
 
-let randomNumForUser = Math.floor(Math.random() * 3);
-let userChoice = choices[randomNumForUser];
+// let randomNumForUser = Math.floor(Math.random() * 3);
+// let userChoice = choices[randomNumForUser];
 
-let randomNumForComputer = Math.floor(Math.random() * 3);
-let computerChoice = choices[randomNumForComputer];
+// let randomNumForComputer = Math.floor(Math.random() * 3);
+// let computerChoice = choices[randomNumForComputer];
 
-let responseMessage = "";
+// let responseMessage = "";
 
-if (userChoice === computerChoice) {
-    responseMessage = "It\'s a tie!";
-} else if (
-    userChoice === "Rock" && computerChoice === "Scissors" ||
-    userChoice === "Paper" && computerChoice === "Rock" ||
-    userChoice === "Scissors" && computerChoice === "Paper"
-) {
-    responseMessage = "You win!";
-} else {
-    responseMessage = "Computer win!";
+// if (userChoice === computerChoice) {
+//     responseMessage = "It\'s a tie!";
+// } else if (
+//     userChoice === "Rock" && computerChoice === "Scissors" ||
+//     userChoice === "Paper" && computerChoice === "Rock" ||
+//     userChoice === "Scissors" && computerChoice === "Paper"
+// ) {
+//     responseMessage = "You win!";
+// } else {
+//     responseMessage = "Computer win!";
+// }
+
+
+// console.log("User Selection: ", userChoice);
+// console.log("Computer Selection: ", computerChoice);
+// console.log(responseMessage);
+
+
+// let someArray = ["Mike", "Antal", "Marc", "Emir", "Louiza", "Jacky"];
+// let notFound = true;
+// while (notFound && someArray.length > 0) {
+//     if (someArray[0] === "Louiza") {
+//         console.log("Found her!");
+//         notFound = false;
+//     } else {
+//         someArray.shift();
+//     }
+// }
+
+
+// let maxVal = 5;
+// let randomNumber = Math.floor(Math.random() * maxVal) + 1;
+// console.log(randomNumber)
+
+// let answer = false;
+
+// while (!answer) {
+//     let userGuess = parseInt(prompt(`Guess a number between 1 and ${maxVal}: `));
+//     if (randomNumber === userGuess) {
+//         console.log("Correct!");
+//         answer = true;
+//     } else if (userGuess < randomNumber) {
+//         console.log("Too low!");
+//     } else {
+//         console.log("Too high!");
+//     }
+// } 
+
+// fibonacci sequence
+
+let nr1 = 0;
+let nr2 = 1;
+let temp;
+
+let fibonacciArrays = [];
+
+while (fibonacciArrays.length < 25) {
+    // push all number 1 incremented number to the fibonacciArrays
+    fibonacciArrays.push(nr1);
+
+    // loop through while adding 0 + 1
+    temp = nr1 + nr2;
+
+    // number is now number 2
+    nr1 = nr2;
+
+    // number 2 is now the temporary number, so
+    // nr2 and temp now holds the updated last numbers and automatically add the both to get nr1.
+    nr2 = temp;
+    console.log(fibonacciArrays);
 }
-
-
-console.log("User Selection: ", userChoice);
-console.log("Computer Selection: ", computerChoice);
-console.log(responseMessage);
